@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+        border: 7px solid red;
+        width: 100px;
+        height: 200px;
+        background-color: aqua;
+
+            
+    
+        }
+        
+        #translate:checked ~ .div1{
+            transform: translate(300px,200px);
+
+        }
+        #rotate1:checked ~ .div1{
+            transform:rotate(45deg);
+        }
+        #scale:checked ~ .div1{
+            transform:scaleX(4)
+
+        }
+        #skew:checked ~ .div1{
+            transform:skewX(10deg)
+
+        }
+        #rotate:checked ~ .div1{
+            transform:rotate(95deg);
+        }
+        #translate1:checked ~ .div1{
+            transform: translate(30px,150px);
+
+        }
+        #scale1:checked ~ .div1{
+            transform:scaley(-1)
+
+        }
+        #skew1:checked ~ .div1{
+            transform:skewX(45deg)
+
+        }
+    </style>
+</head>
+<body>
+    <h1>transform</h1>
+    <section>
+        <input type="radio" id="translate" name="akash">translate<br>
+        <input type="radio" id="rotate1" name="akash">rotate<br>
+        <input type="radio" id="scale" name="akash">scale<br>
+        <input type="radio" id="skew" name="akash">skew<br>
+        <input type="radio" id="rotate" name="akash">rotate95deg<br>
+        <input type="radio" id="translate1" name="akash">translate 150px<br>
+        <input type="radio" id="scale1" name="akash">scale-y<br>
+        <input type="radio" id="skew1" name="akash">skew 45deg<br>
+        <div class="div1">10kcoders</div>
+    </section>
+</body>
+</html>
